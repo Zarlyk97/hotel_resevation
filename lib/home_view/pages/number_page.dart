@@ -59,7 +59,8 @@ class _NumberPageState extends State<NumberPage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
-                      padding: EdgeInsets.only(left: 16, top: 10, right: 16),
+                      padding:
+                          const EdgeInsets.only(left: 16, top: 10, right: 16),
                       child: CoruselWidget(urls: room!.imageUrls),
                     ),
                     const SizedBox(

@@ -57,7 +57,7 @@ class AppTexts {
   static const izmenit2 = '9 300 ₽';
   static const izmenit3 = '2 136 ₽';
   static const izmenit4 = '198 036 ₽';
-  static const oplatit = 'Оплатить 198 036 ₽';
+  static const oplatit = 'Оплатить 300 850 ₽';
   static const zakaz = 'Заказ оплачен';
   static const zakazPrinit = 'Ваш заказ принят в работу';
   static const informatsiya =

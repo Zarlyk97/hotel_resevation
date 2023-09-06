@@ -32,14 +32,13 @@ class _HomeViewState extends State<HomeView> {
   void getData() async {
     usermodel = await ApiService().getUsers();
     setState(() {});
-    print('usermodel: $usermodel');
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.grey1,
       appBar: AppBar(
+        backgroundColor: AppColors.white,
         title: const Text(
           AppTexts.otel,
           style: TextStyles.otelStyle,

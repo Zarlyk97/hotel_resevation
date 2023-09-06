@@ -1,11 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:otel_dev/theme/color_styles.dart';
 
 class TextFormField1 extends StatelessWidget {
-  const TextFormField1({
+  final TextEditingController? controller;
+  final TextInputType? keyboardType;
+  final String? Function(String?)? validator;
+  final List<TextInputFormatter>? inputFormatters;
+  final formkey = GlobalKey<FormState>();
+
+  TextFormField1({
     super.key,
+    this.controller,
+    this.keyboardType,
+    this.validator,
+    this.inputFormatters,
     required this.labelText,
   });
+
   final String labelText;
 
   @override
@@ -15,10 +27,10 @@ class TextFormField1 extends StatelessWidget {
             height: 1.10,
             fontSize: 17,
           ),
-      // keyboardType: keyboardType,
-      // validator: validator,
-      // controller: controller,
-      // inputFormatters: inputFormatters,
+      keyboardType: keyboardType,
+      validator: validator,
+      controller: controller,
+      inputFormatters: inputFormatters,
       decoration: InputDecoration(
         contentPadding: const EdgeInsets.symmetric(
           vertical: 8,
