@@ -63,4 +63,6 @@ class AppTexts {
   static const informatsiya =
       '   Подтверждение заказа №104893 может  \nзанять некоторое время (от 1 часа до суток). \n       Как только мы получим ответ от \n     туроператора, вам на почту придет \n                        уведомление.';
   static const super1 = 'Супер!';
+  static const numberphone = 'Номер телефона';
+  static const pochta = 'Почта';
 }
