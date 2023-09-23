@@ -310,6 +310,7 @@ class _BronPageState extends State<BronPage> {
                             TextFormField1(
                               keyboardType: TextInputType.number,
                               controller: phoneController,
+                              inputFormatters: [phoneMaskFormatter],
                               validator: (value) {
                                 if (value == null || value.isEmpty) {
                                   return 'Заполните поле';
@@ -486,7 +487,8 @@ class _BronPageState extends State<BronPage> {
                       height: 10,
                     ),
                     CustomButton1(
-                      text: AppTexts.oplatit,
+                      text:
+                          'Оплатить  ${registermodel!.tourPrice + registermodel!.fuelCharge + registermodel!.serviceCharge}  ₽',
                       onTap: () {
                         if (_formKey.currentState!.validate()) {
                           // print(emailController.text);

@@ -119,7 +119,8 @@ class _HomeViewState extends State<HomeView> {
                                   ),
                                   Row(
                                     children: [
-                                      Text(usermodel!.minimalPrice.toString(),
+                                      Text(
+                                          "${usermodel!.minimalPrice.toString()} ₽",
                                           style: TextStyles.sifraText),
                                       const SizedBox(
                                         width: 30,

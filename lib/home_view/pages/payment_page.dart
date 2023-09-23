@@ -71,7 +71,9 @@ class PaymentPage extends StatelessWidget {
           ),
           CustomButton1(
             text: AppTexts.super1,
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).popUntil((route) => route.isFirst);
+            },
             style: TextStyles.kvyboru,
           ),
         ],
