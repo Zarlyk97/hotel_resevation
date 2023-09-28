@@ -75,6 +75,7 @@ class _NumberPageState extends State<NumberPage> {
                           const SizedBox(
                             height: 10,
                           ),
+                          ///////////////////////////////////
                           Wrap(
                             spacing: 8,
                             runSpacing: 8,
@@ -94,6 +95,7 @@ class _NumberPageState extends State<NumberPage> {
                           const SizedBox(
                             height: 10,
                           ),
+                          ///////////////////////////////////////
                           GestureDetector(
                             child: Container(
                               width: 192,
